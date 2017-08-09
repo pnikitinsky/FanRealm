@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668F2A5E968C27B3C0C87D1D /* Pods_rlm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8205919DDB8F8B3EFF1F574 /* Pods_rlm.framework */; };
 		E94606D11F3B6B7F001CF00B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94606D01F3B6B7F001CF00B /* AppDelegate.swift */; };
 		E94606D31F3B6B7F001CF00B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94606D21F3B6B7F001CF00B /* ViewController.swift */; };
 		E94606D61F3B6B7F001CF00B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94606D41F3B6B7F001CF00B /* Main.storyboard */; };
 		E94606D91F3B6B7F001CF00B /* rlm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E94606D71F3B6B7F001CF00B /* rlm.xcdatamodeld */; };
 		E94606DB1F3B6B7F001CF00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94606DA1F3B6B7F001CF00B /* Assets.xcassets */; };
 		E94606DE1F3B6B7F001CF00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94606DC1F3B6B7F001CF00B /* LaunchScreen.storyboard */; };
+		E94606E61F3B72C1001CF00B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94606E51F3B72C1001CF00B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37010250C2CAF88E3FF7B0E9 /* Pods-rlm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rlm/Pods-rlm.debug.xcconfig"; sourceTree = "<group>"; };
+		5EC2AAA6A17F225F0C710CFD /* Pods-rlm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlm.release.xcconfig"; path = "Pods/Target Support Files/Pods-rlm/Pods-rlm.release.xcconfig"; sourceTree = "<group>"; };
+		A8205919DDB8F8B3EFF1F574 /* Pods_rlm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rlm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94606CD1F3B6B7F001CF00B /* rlm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rlm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94606D01F3B6B7F001CF00B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94606D21F3B6B7F001CF00B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		E94606DA1F3B6B7F001CF00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E94606DD1F3B6B7F001CF00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E94606DF1F3B6B7F001CF00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E94606E51F3B72C1001CF00B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668F2A5E968C27B3C0C87D1D /* Pods_rlm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1241FB3103879FD4634B2B18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37010250C2CAF88E3FF7B0E9 /* Pods-rlm.debug.xcconfig */,
+				5EC2AAA6A17F225F0C710CFD /* Pods-rlm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC51B986177D171159FDEA8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8205919DDB8F8B3EFF1F574 /* Pods_rlm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E94606C41F3B6B7F001CF00B = {
 			isa = PBXGroup;
 			children = (
 				E94606CF1F3B6B7F001CF00B /* rlm */,
 				E94606CE1F3B6B7F001CF00B /* Products */,
+				1241FB3103879FD4634B2B18 /* Pods */,
+				CC51B986177D171159FDEA8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				E94606DC1F3B6B7F001CF00B /* LaunchScreen.storyboard */,
 				E94606DF1F3B6B7F001CF00B /* Info.plist */,
 				E94606D71F3B6B7F001CF00B /* rlm.xcdatamodeld */,
+				E94606E51F3B72C1001CF00B /* Model.swift */,
 			);
 			path = rlm;
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94606E21F3B6B7F001CF00B /* Build configuration list for PBXNativeTarget "rlm" */;
 			buildPhases = (
+				9F5BC67CC20880D100C59E3B /* [CP] Check Pods Manifest.lock */,
 				E94606C91F3B6B7F001CF00B /* Sources */,
 				E94606CA1F3B6B7F001CF00B /* Frameworks */,
 				E94606CB1F3B6B7F001CF00B /* Resources */,
+				C44AA772AF75F5D78B02D348 /* [CP] Embed Pods Frameworks */,
+				6F2A50553202B86E77E01AD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,12 +165,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F2A50553202B86E77E01AD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rlm/Pods-rlm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F5BC67CC20880D100C59E3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C44AA772AF75F5D78B02D348 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rlm/Pods-rlm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E94606C91F3B6B7F001CF00B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E94606D31F3B6B7F001CF00B /* ViewController.swift in Sources */,
+				E94606E61F3B72C1001CF00B /* Model.swift in Sources */,
 				E94606D91F3B6B7F001CF00B /* rlm.xcdatamodeld in Sources */,
 				E94606D11F3B6B7F001CF00B /* AppDelegate.swift in Sources */,
 			);
@@ -265,6 +344,7 @@
 		};
 		E94606E31F3B6B7F001CF00B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37010250C2CAF88E3FF7B0E9 /* Pods-rlm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XSVH274M2;
@@ -278,6 +358,7 @@
 		};
 		E94606E41F3B6B7F001CF00B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC2AAA6A17F225F0C710CFD /* Pods-rlm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XSVH274M2;
@@ -308,6 +389,7 @@
 				E94606E41F3B6B7F001CF00B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
